@@ -1,0 +1,200 @@
+Recency,Frequency,MonetaryValue,R,F,M,RFM_Score,RFM_segment_label,RFM_customer_segment
+56,5,1391.67,3,2,3,8,Mid-value,Promising
+26,4,835.68,3,2,1,6,Mid-value,At Risk
+126,4,782.8299999999999,1,2,1,4,Low-value,Lost
+5,8,1925.0900000000001,4,4,4,12,High-value,Champion
+55,3,874.81,3,1,1,5,Low-value,Can't Lose
+83,4,1328.1399999999999,2,2,3,7,Mid-value,Promising
+126,3,1050.06,1,1,2,4,Low-value,Lost
+12,10,2311.6,4,4,4,12,High-value,Champion
+78,3,896.5,2,1,2,5,Low-value,Can't Lose
+42,4,613.08,3,2,1,6,Mid-value,At Risk
+3,5,1463.1399999999999,4,2,3,9,Mid-value,Promising
+4,7,1895.59,4,4,4,12,High-value,Champion
+56,7,2245.53,3,4,4,11,High-value,Champion
+346,1,159.33,1,1,1,3,Low-value,Lost
+99,2,711.5799999999999,2,1,1,4,Low-value,Lost
+48,5,1956.75,3,2,4,9,Mid-value,Promising
+27,8,1806.28,3,4,3,10,High-value,Champion
+147,5,1271.69,1,2,2,5,Low-value,Can't Lose
+51,6,1443.8,3,3,3,9,Mid-value,Promising
+334,1,307.47,1,1,1,3,Low-value,Lost
+78,8,2468.61,2,4,4,10,High-value,Champion
+102,6,1676.3899999999999,2,3,3,8,Mid-value,Promising
+48,6,2367.22,3,3,4,10,High-value,Champion
+95,7,2086.2200000000003,2,4,4,10,High-value,Champion
+137,4,731.75,1,2,1,4,Low-value,Lost
+80,4,1263.64,2,2,2,6,Mid-value,At Risk
+78,4,934.15,2,2,2,6,Mid-value,At Risk
+4,8,2308.89,4,4,4,12,High-value,Champion
+3,4,831.27,4,2,1,7,Mid-value,Promising
+14,5,1114.12,4,2,2,8,Mid-value,Promising
+34,4,938.44,3,2,2,7,Mid-value,Promising
+31,3,544.5,3,1,1,5,Low-value,Can't Lose
+176,1,66.32,1,1,1,3,Low-value,Lost
+66,6,1165.88,2,3,2,7,Mid-value,Promising
+89,4,938.6700000000001,2,2,2,6,Mid-value,At Risk
+56,3,682.4200000000001,3,1,1,5,Low-value,Can't Lose
+89,5,1495.48,2,2,3,7,Mid-value,Promising
+16,5,1003.59,4,2,2,8,Mid-value,Promising
+62,6,1301.1,2,3,2,7,Mid-value,Promising
+163,3,1192.02,1,1,2,4,Low-value,Lost
+13,7,1779.98,4,4,3,11,High-value,Champion
+49,3,1234.8899999999999,3,1,2,6,Mid-value,At Risk
+100,3,565.6600000000001,2,1,1,4,Low-value,Lost
+68,3,1287.01,2,1,2,5,Low-value,Can't Lose
+124,7,1874.13,1,4,4,9,Mid-value,Promising
+95,7,2021.68,2,4,4,10,High-value,Champion
+128,7,1783.45,1,4,3,8,Mid-value,Promising
+24,5,1778.8899999999999,3,2,3,8,Mid-value,Promising
+121,8,1268.09,1,4,2,7,Mid-value,Promising
+41,3,1185.82,3,1,2,6,Mid-value,At Risk
+12,7,2200.42,4,4,4,12,High-value,Champion
+118,4,986.39,1,2,2,5,Low-value,Can't Lose
+57,6,1522.0,3,3,3,9,Mid-value,Promising
+82,8,2643.91,2,4,4,10,High-value,Champion
+89,5,1144.22,2,2,2,6,Mid-value,At Risk
+3,5,1542.78,4,2,3,9,Mid-value,Promising
+10,6,1578.08,4,3,3,10,High-value,Champion
+331,1,396.34,1,1,1,3,Low-value,Lost
+66,8,2843.71,2,4,4,10,High-value,Champion
+117,1,41.18,1,1,1,3,Low-value,Lost
+18,3,876.25,4,1,1,6,Mid-value,At Risk
+172,3,647.5799999999999,1,1,1,3,Low-value,Lost
+92,2,420.15,2,1,1,4,Low-value,Lost
+22,5,1472.68,3,2,3,8,Mid-value,Promising
+15,10,2758.0,4,4,4,12,High-value,Champion
+122,3,1215.5,1,1,2,4,Low-value,Lost
+73,6,1717.04,2,3,3,8,Mid-value,Promising
+4,8,2054.19,4,4,4,12,High-value,Champion
+19,5,1410.24,3,2,3,8,Mid-value,Promising
+82,4,1122.26,2,2,2,6,Mid-value,At Risk
+127,3,549.75,1,1,1,3,Low-value,Lost
+56,5,1045.33,3,2,2,7,Mid-value,Promising
+284,3,750.02,1,1,1,3,Low-value,Lost
+153,3,1133.73,1,1,2,4,Low-value,Lost
+18,9,1975.43,4,4,4,12,High-value,Champion
+27,5,1337.62,3,2,3,8,Mid-value,Promising
+56,3,512.0,3,1,1,5,Low-value,Can't Lose
+19,1,497.76,3,1,1,5,Low-value,Can't Lose
+151,4,1435.47,1,2,3,6,Mid-value,At Risk
+291,1,335.84,1,1,1,3,Low-value,Lost
+50,6,1419.56,3,3,3,9,Mid-value,Promising
+29,7,2466.17,3,4,4,11,High-value,Champion
+11,3,585.5,4,1,1,6,Mid-value,At Risk
+12,9,2003.97,4,4,4,12,High-value,Champion
+78,3,1051.35,2,1,2,5,Low-value,Can't Lose
+3,5,1260.7,4,2,2,8,Mid-value,Promising
+106,7,2077.19,1,4,4,9,Mid-value,Promising
+14,5,1156.8899999999999,4,2,2,8,Mid-value,Promising
+25,2,712.95,3,1,1,5,Low-value,Can't Lose
+108,7,1717.91,1,4,3,8,Mid-value,Promising
+138,6,861.25,1,3,1,5,Low-value,Can't Lose
+13,4,1201.85,4,2,2,8,Mid-value,Promising
+104,9,2455.8,2,4,4,10,High-value,Champion
+54,4,628.51,3,2,1,6,Mid-value,At Risk
+90,2,433.45,2,1,1,4,Low-value,Lost
+17,5,1868.83,4,2,4,10,High-value,Champion
+281,1,137.54,1,1,1,3,Low-value,Lost
+5,8,2135.79,4,4,4,12,High-value,Champion
+5,8,2517.87,4,4,4,12,High-value,Champion
+115,6,2121.1,1,3,4,8,Mid-value,Promising
+1,8,2165.23,4,4,4,12,High-value,Champion
+118,8,2369.24,1,4,4,9,Mid-value,Promising
+89,5,1595.06,2,2,3,7,Mid-value,Promising
+55,8,2651.24,3,4,4,11,High-value,Champion
+116,6,1550.55,1,3,3,7,Mid-value,Promising
+32,5,1194.75,3,2,2,7,Mid-value,Promising
+67,5,1524.49,2,2,3,7,Mid-value,Promising
+87,7,1814.28,2,4,4,10,High-value,Champion
+52,11,2184.14,3,4,4,11,High-value,Champion
+361,1,235.58,1,1,1,3,Low-value,Lost
+16,5,614.7,4,2,1,7,Mid-value,Promising
+172,3,611.35,1,1,1,3,Low-value,Lost
+31,8,1766.17,3,4,3,10,High-value,Champion
+97,5,1651.84,2,2,3,7,Mid-value,Promising
+6,3,1164.19,4,1,2,7,Mid-value,Promising
+60,6,1791.65,3,3,3,9,Mid-value,Promising
+145,4,1194.3500000000001,1,2,2,5,Low-value,Can't Lose
+11,6,1880.63,4,3,4,11,High-value,Champion
+2,5,1038.42,4,2,2,8,Mid-value,Promising
+143,3,894.25,1,1,1,3,Low-value,Lost
+92,4,450.67999999999995,2,2,1,5,Low-value,Can't Lose
+11,7,2052.49,4,4,4,12,High-value,Champion
+45,2,565.3199999999999,3,1,1,5,Low-value,Can't Lose
+83,7,1843.63,2,4,4,10,High-value,Champion
+127,4,1261.51,1,2,2,5,Low-value,Can't Lose
+30,6,1780.47,3,3,3,9,Mid-value,Promising
+100,6,1926.2800000000002,2,3,4,9,Mid-value,Promising
+217,2,613.86,1,1,1,3,Low-value,Lost
+79,3,787.14,2,1,1,4,Low-value,Lost
+228,1,300.68,1,1,1,3,Low-value,Lost
+9,3,939.3299999999999,4,1,2,7,Mid-value,Promising
+22,3,777.68,3,1,1,5,Low-value,Can't Lose
+23,4,1222.9,3,2,2,7,Mid-value,Promising
+19,5,830.64,3,2,1,6,Mid-value,At Risk
+86,4,1201.72,2,2,2,6,Mid-value,At Risk
+48,6,1200.2,3,3,2,8,Mid-value,Promising
+5,5,1443.1799999999998,4,2,3,9,Mid-value,Promising
+11,5,1715.5900000000001,4,2,3,9,Mid-value,Promising
+84,8,2419.88,2,4,4,10,High-value,Champion
+74,2,575.1899999999999,2,1,1,4,Low-value,Lost
+25,10,3857.06,3,4,4,11,High-value,Champion
+4,4,771.73,4,2,1,7,Mid-value,Promising
+10,7,1901.22,4,4,4,12,High-value,Champion
+245,2,326.16999999999996,1,1,1,3,Low-value,Lost
+33,8,2315.12,3,4,4,11,High-value,Champion
+10,4,1346.48,4,2,3,9,Mid-value,Promising
+4,9,2086.08,4,4,4,12,High-value,Champion
+87,5,1532.02,2,2,3,7,Mid-value,Promising
+121,5,1395.48,1,2,3,6,Mid-value,At Risk
+217,1,290.17,1,1,1,3,Low-value,Lost
+4,1,55.99,4,1,1,6,Mid-value,At Risk
+69,5,1335.07,2,2,3,7,Mid-value,Promising
+108,6,1629.6,1,3,3,7,Mid-value,Promising
+100,6,1820.9,2,3,4,9,Mid-value,Promising
+48,7,2426.96,3,4,4,11,High-value,Champion
+14,11,3179.64,4,4,4,12,High-value,Champion
+21,5,981.1800000000001,3,2,2,7,Mid-value,Promising
+108,4,1519.59,1,2,3,6,Mid-value,At Risk
+15,3,735.84,4,1,1,6,Mid-value,At Risk
+135,5,1177.5700000000002,1,2,2,5,Low-value,Can't Lose
+136,8,1915.22,1,4,4,9,Mid-value,Promising
+42,8,2047.5900000000001,3,4,4,11,High-value,Champion
+78,6,1763.64,2,3,3,8,Mid-value,Promising
+57,5,1386.04,3,2,3,8,Mid-value,Promising
+3,9,1847.44,4,4,4,12,High-value,Champion
+67,4,990.39,2,2,2,6,Mid-value,At Risk
+88,3,863.53,2,1,1,4,Low-value,Lost
+67,4,1610.61,2,2,3,7,Mid-value,Promising
+25,6,1164.8,3,3,2,8,Mid-value,Promising
+107,5,1627.06,1,2,3,6,Mid-value,At Risk
+66,5,1609.59,2,2,3,7,Mid-value,Promising
+37,6,1244.35,3,3,2,8,Mid-value,Promising
+118,8,2304.5299999999997,1,4,4,9,Mid-value,Promising
+16,5,1155.09,4,2,2,8,Mid-value,Promising
+39,10,2608.9700000000003,3,4,4,11,High-value,Champion
+174,3,582.83,1,1,1,3,Low-value,Lost
+55,4,1041.31,3,2,2,7,Mid-value,Promising
+8,4,924.3600000000001,4,2,2,8,Mid-value,Promising
+80,6,1553.85,2,3,3,8,Mid-value,Promising
+1,6,1591.57,4,3,3,10,High-value,Champion
+233,5,1355.33,1,2,3,6,Mid-value,At Risk
+45,5,1490.71,3,2,3,8,Mid-value,Promising
+112,7,2365.57,1,4,4,9,Mid-value,Promising
+131,3,1141.44,1,1,2,4,Low-value,Lost
+66,3,955.77,2,1,2,5,Low-value,Can't Lose
+78,5,1959.97,2,2,4,8,Mid-value,Promising
+2,8,2584.9,4,4,4,12,High-value,Champion
+8,5,1088.31,4,2,2,8,Mid-value,Promising
+13,5,1101.87,4,2,2,8,Mid-value,Promising
+16,5,1415.92,4,2,3,9,Mid-value,Promising
+151,4,1144.36,1,2,2,5,Low-value,Can't Lose
+216,4,1054.16,1,2,2,5,Low-value,Can't Lose
+68,7,1723.22,2,4,3,9,Mid-value,Promising
+34,6,1400.95,3,3,3,9,Mid-value,Promising
+14,4,1667.97,4,2,3,9,Mid-value,Promising
+1,3,681.1700000000001,4,1,1,6,Mid-value,At Risk
+85,2,479.41,2,1,1,4,Low-value,Lost
+64,4,1002.44,2,2,2,6,Mid-value,At Risk
+18,5,1482.53,4,2,3,9,Mid-value,Promising
