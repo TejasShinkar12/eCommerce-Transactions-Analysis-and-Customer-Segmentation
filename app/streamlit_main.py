@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 from recommendation_model import (
     load_data,
     build_content_features,
