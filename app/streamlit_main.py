@@ -12,7 +12,7 @@ from datetime import datetime
 from scipy.stats import linregress
 
 # --- App Title and Description ---
-st.set_page_config(layout="wide")
+st.set_page_config(page_title="NextPick", layout="wide")
 st.title("NextPick")
 st.markdown(
     """
