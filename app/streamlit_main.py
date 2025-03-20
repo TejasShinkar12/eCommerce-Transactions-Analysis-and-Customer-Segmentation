@@ -387,7 +387,7 @@ fig_radar.update_layout(
     ),
     annotations=[
         dict(
-            x=0,
+            x=0.075,
             y=1.3,
             xref="paper",
             yref="paper",
@@ -405,7 +405,7 @@ fig_radar.update_layout(
             font=dict(size=16),
         ),
         dict(
-            x=1,
+            x=0.935,
             y=1.3,
             xref="paper",
             yref="paper",
