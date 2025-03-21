@@ -64,16 +64,57 @@ This project involves analyzing an eCommerce Transactions dataset, which compris
         ├── EDA.ipynb
         └── Lookalike.ipynb
 ```
+
 ### 📂 Project Index
-<details open> <summary><b><code>ECOMMERCE-TRANSACTIONS-ANALYSIS-AND-CUSTOMER-SEGMENTATION</code></b></summary> <details> <!-- notebooks Submodule --> <summary><b>notebooks</b></summary> <blockquote> <table> <tr> <td><b><a href='https://github.com/TejasShinkar12/eCommerce-Transactions-Analysis-and-Customer-Segmentation/blob/master/notebooks/Clustering.ipynb'>Clustering.ipynb</a></b></td> <td><code>Performs PCA and K-means clustering to segment customers into three groups, with radar chart visualizations.</code></td> </tr> <tr> <td><b><a href='https://github.com/TejasShinkar12/eCommerce-Transactions-Analysis-and-Customer-Segmentation/blob/master/notebooks/EDA.ipynb'>EDA.ipynb</a></b></td> <td><code>Conducts data merging, cleaning, and feature engineering, with visualizations of transaction and product trends.</code></td> </tr> <tr> <td><b><a href='https://github.com/TejasShinkar12/eCommerce-Transactions-Analysis-and-Customer-Segmentation/blob/master/notebooks/Lookalike.ipynb'>Lookalike.ipynb</a></b></td> <td><code>Implements a cosine similarity-based lookalike model to recommend similar customers, saving results to Lookalike.csv.</code></td> </tr> </table> </blockquote> </details> <details> <!-- app Submodule --> <summary><b>app</b></summary> <blockquote> <table> <tr> <td><b><a href='https://github.com/TejasShinkar12/eCommerce-Transactions-Analysis-and-Customer-Segmentation/blob/master/app/streamlit_main.py'>streamlit_main.py</a></b></td> <td><code>Main script for the Streamlit dashboard, integrating EDA, clustering, and lookalike models with interactive visualizations.</code></td> </tr> <tr> <td><b><a href='https://github.com/TejasShinkar12/eCommerce-Transactions-Analysis-and-Customer-Segmentation/blob/master/app/requirements.txt'>requirements.txt</a></b></td> <td><code>Lists project dependencies (e.g., Streamlit, Pandas, Scikit-learn, Plotly) for deployment.</code></td> </tr> </table> </blockquote> </details> </details>
+
+<details open>
+    <summary><b><code>ECOMMERCE-TRANSACTIONS-ANALYSIS-AND-CUSTOMER-SEGMENTATION</code></b></summary>
+    <details open>
+        <!-- notebooks Submodule -->
+        <summary><b>notebooks</b></summary>
+        <blockquote>
+            <table>
+                <tr>
+                    <td><b><a href="https://github.com/TejasShinkar12/eCommerce-Transactions-Analysis-and-Customer-Segmentation/blob/master/notebooks/EDA.ipynb">EDA.ipynb</a></b></td>
+                    <td><code>Conducts data merging, cleaning, and feature engineering, with visualizations of transaction and product trends.</code></td>
+                </tr>
+                <tr>
+                    <td><b><a href="https://github.com/TejasShinkar12/eCommerce-Transactions-Analysis-and-Customer-Segmentation/blob/master/notebooks/Clustering.ipynb">Clustering.ipynb</a></b></td>
+                    <td><code>Performs PCA and K-means clustering to segment customers into three groups, with radar chart visualizations.</code></td>
+                </tr>
+                <tr>
+                    <td><b><a href="https://github.com/TejasShinkar12/eCommerce-Transactions-Analysis-and-Customer-Segmentation/blob/master/notebooks/Lookalike.ipynb">Lookalike.ipynb</a></b></td>
+                    <td><code>Implements a cosine similarity-based lookalike model to recommend similar customers, saving results to Lookalike.csv.</code></td>
+                </tr>
+            </table>
+        </blockquote>
+    </details>
+    <details open>
+        <!-- app Submodule -->
+        <summary><b>app</b></summary>
+        <blockquote>
+            <table>
+                <tr>
+                    <td><b><a href="https://github.com/TejasShinkar12/eCommerce-Transactions-Analysis-and-Customer-Segmentation/blob/master/app/streamlit_main.py">streamlit_main.py</a></b></td>
+                    <td><code>Main script for the Streamlit dashboard, integrating EDA, clustering, and lookalike models with interactive visualizations.</code></td>
+                </tr>
+                <tr>
+                    <td><b><a href="https://github.com/TejasShinkar12/eCommerce-Transactions-Analysis-and-Customer-Segmentation/blob/master/app/requirements.txt">requirements.txt</a></b></td>
+                    <td><code>Lists project dependencies (e.g., Streamlit, Pandas, Scikit-learn, Plotly) for deployment.</code></td>
+                </tr>
+            </table>
+        </blockquote>
+    </details>
+</details>
 
 ---
+
 ## 📌 Project Roadmap
 
-- [X] **`Task 1`**: <strike>Complete EDA with data cleaning, feature engineering, and visualizations.</strike>
-- [X] **`Task 2`**: <strike>Implement customer clustering and profile segments using radar charts.</strike>
-- [X] **`Task 3`**: <strike>Develop lookalike model for customer recommendations.</strike>
-- [X] **`Task 4`**: <strike>Create an interactive Streamlit dashboard for insights.</strike>
+- [x] **`Task 1`**: <strike>Complete EDA with data cleaning, feature engineering, and visualizations.</strike>
+- [x] **`Task 2`**: <strike>Implement customer clustering and profile segments using radar charts.</strike>
+- [x] **`Task 3`**: <strike>Develop lookalike model for customer recommendations.</strike>
+- [x] **`Task 4`**: <strike>Create an interactive Streamlit dashboard for insights.</strike>
 - [ ] **`Task 5`**: Enhance dashboard with predictive sales forecasting.
 - [ ] **`Task 6`**: Add real-time data integration for dynamic updates.
 
