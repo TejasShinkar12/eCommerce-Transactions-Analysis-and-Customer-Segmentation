@@ -1,19 +1,8 @@
 <p align="center"><h1 align="center">eCOMMERCE TRANSACTIONS ANALYSIS & CUSTOMER SEGMENTATION</h1></p>
 <p align="center">
-	<em><code>❯ REPLACE-ME</code></em>
+	<em><code> Analyzing eCommerce data to uncover customer insights and drive business strategies </code></em>
 </p>
-<p align="center">
-	<img src="https://img.shields.io/github/license/TejasShinkar12/eCommerce-Transactions-Analysis-and-Customer-Segmentation?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
-	<img src="https://img.shields.io/github/last-commit/TejasShinkar12/eCommerce-Transactions-Analysis-and-Customer-Segmentation?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
-	<img src="https://img.shields.io/github/languages/top/TejasShinkar12/eCommerce-Transactions-Analysis-and-Customer-Segmentation?style=default&color=0080ff" alt="repo-top-language">
-	<img src="https://img.shields.io/github/languages/count/TejasShinkar12/eCommerce-Transactions-Analysis-and-Customer-Segmentation?style=default&color=0080ff" alt="repo-language-count">
-</p>
-<p align="center"><!-- default option, no dependency badges. -->
-</p>
-<p align="center">
-	<!-- default option, no dependency badges. -->
-</p>
-<br>
+
 
 ## 🔗 Table of Contents
 
@@ -171,6 +160,13 @@ This project is protected under the [MIT License](https://choosealicense.com/lic
 
 ## 🙌 Acknowledgments
 
-- List any resources, contributors, inspiration, etc. here.
+- **Libraries**: Thanks to the developers of Pandas, Scikit-learn, Plotly, and Streamlit for their powerful tools.
+- **Inspiration**: This problem statement originated as an assignment from [Zeotap](https://zeotap.com/), which I couldn’t complete on time due to health issues affecting an immediate family member. Despite the setback, I found the challenge of eCommerce analytics and customer segmentation compelling, motivating me to pursue and complete it independently.
+- **Resources**: 
+  - Utilized documentation from [Streamlit](https://docs.streamlit.io/), [Plotly](https://plotly.com/python/), and [Scikit-learn](https://scikit-learn.org/).
+  - [Customer Segmentation & Recommendation System](https://www.kaggle.com/code/farzadnekouei/customer-segmentation-recommendation-system) by Farzad Nekouei on Kaggle for guidance and insights into clustering and recommendation techniques.
+  - [LookAlikes Case Study](https://www.perceptive-analytics.com/wp-content/uploads/2019/11/LookAlikes_Case_Study_Ver1.0.pdf) by Perceptive Analytics for practical applications of lookalike modeling.
+  - [Finding Lookalike Customers for E-Commerce Marketing](https://arxiv.org/pdf/2301.03147) by Yang Peng, Changzheng Liu and Wei Shen, researchers at Walmart Global Tech, for overview of lookalike modeling and audience expansion systems.
+  - [Data Science Dojo](https://www.youtube.com/live/Ams4sEn50cw) on YouTube for basics, types, and design considerations of Recommender Systems.
 
 ---
