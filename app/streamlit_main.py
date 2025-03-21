@@ -281,7 +281,7 @@ radar_df, radar_attrs_norm = prepare_radar_data(customer_features)
 
 # --- Customer Selection in Main Interface ---
 st.subheader("Select a Customer")
-default_customer = customer_features.index[0]  # Pre-select first customer
+default_customer = customer_features.index[0]  # default first customer
 customer_id = st.selectbox(
     "Customer ID",
     options=customer_features.index.tolist(),
@@ -452,7 +452,7 @@ with col1:
     )
     rfm_fig.update_layout(margin=dict(t=0, b=0, l=0, r=0))
     st.plotly_chart(rfm_fig, use_container_width=True)
-    # Add explanatory text
+
     if selected_segment:
         st.markdown(
             f"**Note:** The segment with a thicker red border represents the selected customer's segment - **{selected_segment}**."
@@ -487,7 +487,7 @@ with col2:
         hovertemplate="Region: %{x}<br>Revenue: $%{y:.2f}<extra></extra>",
     )
     st.plotly_chart(region_fig, use_container_width=True)
-    # Add explanatory text
+
     if selected_region:
         st.markdown(
             f"**Note:** The red bar represents the selected customer's region - **{selected_region}**."
