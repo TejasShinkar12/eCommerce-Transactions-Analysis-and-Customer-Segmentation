@@ -32,6 +32,29 @@ This project involves analyzing an eCommerce Transactions dataset, which compris
 - **Scalable Insights**: Delivered actionable outputs like segment profiles and lookalike recommendations in CSV format, ready for business integration.
 
 ---
+## 📊 Visualizations
+
+This project leverages interactive and insightful visualizations to communicate customer insights and business metrics effectively. Below are the key visualizations implemented:
+
+**Radar Charts for Cluster Profiles**:  
+- These charts illustrate the normalized attributes of three customer clusters, with the selected customer’s profile overlaid in red for comparison.  
+- Highlights distinct customer behaviors for targeted marketing strategies.  
+
+![Radar Chart](https://kappa.lol/qREh19)
+
+**Treemap for RFM Segmentation**:  
+- This treemap visualizes RFM segments (e.g., Champions, Loyal Customers) by customer count, with color intensity reflecting average spend and a red border highlighting the selected customer’s segment.  
+- Provides a hierarchical view of customer value and segment distribution.  
+
+![Treemap](https://kappa.lol/l-okMl)
+
+**3D Scatter Plot for Customer Clusters**:  
+- A 3D visualization of customer clusters based on PCA components, showing spatial separation.  
+- Demonstrates clustering in three dimensions.
+
+![3D Scatter](https://kappa.lol/Zo6yj2)
+
+---
 
 ## 📁 Project Structure
 
