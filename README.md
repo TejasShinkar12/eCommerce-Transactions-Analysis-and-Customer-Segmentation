@@ -42,7 +42,7 @@ This dataset catalogs all available products, with each product being uniquely i
 - **Transactions Dataset:**
 This dataset captures every purchase made by customers, with each transaction assigned a unique `TransactionID`. The `CustomerID` links each transaction to a specific customer, while `ProductID` connects it to the purchased product. `TransactionDate` logs when the purchase occurred, enabling time-based sales analysis. `Quantity` indicates the number of units bought, and Price reflects the per-unit cost at the time of sale. The `TotalValue` column, derived from `Quantity × Price`, represents the overall revenue generated from each transaction, making it essential for financial reporting and sales trend analysis.
 
-- ![ERD](https://kappa.lol/BDJSi-)
+![ERD](https://kappa.lol/BDJSi-)
 ---
 ## 📊 Visualizations
 
