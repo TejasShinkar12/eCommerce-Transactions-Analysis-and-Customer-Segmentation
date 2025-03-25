@@ -32,6 +32,18 @@ This project involves analyzing an eCommerce Transactions dataset, which compris
 - **Scalable Insights**: Delivered actionable outputs like segment profiles and lookalike recommendations in CSV format, ready for business integration.
 
 ---
+## 🗂️ Data Description
+- **Customers Dataset:**
+This dataset contains information about customers who have signed up for the service. Each customer is uniquely identified by a `CustomerID`. It includes their `CustomerName`, which provides a reference for personalized interactions. The `SignupDate` records when they joined, allowing analysis of customer acquisition trends. The `Region` column classifies customers into geographic areas (NA, SA, Europe, Asia), which helps in regional sales analysis and marketing strategies.
+
+- **Products Dataset:**
+This dataset catalogs all available products, with each product being uniquely identified by a `ProductID`. The `ProductName` provides a descriptive label, making it easy to reference items. The `Category` groups products into broader classifications, aiding in trend analysis and inventory management. The `Price` field records the standard cost of the product, which is useful for revenue calculations and price optimization strategies.
+
+- **Transactions Dataset:**
+This dataset captures every purchase made by customers, with each transaction assigned a unique `TransactionID`. The `CustomerID` links each transaction to a specific customer, while `ProductID` connects it to the purchased product. `TransactionDate` logs when the purchase occurred, enabling time-based sales analysis. `Quantity` indicates the number of units bought, and Price reflects the per-unit cost at the time of sale. The `TotalValue` column, derived from `Quantity × Price`, represents the overall revenue generated from each transaction, making it essential for financial reporting and sales trend analysis.
+
+![ERD](https://kappa.lol/BDJSi-)
+---
 ## 📊 Visualizations
 
 This project leverages interactive and insightful visualizations to communicate customer insights and business metrics effectively. Below are the key visualizations implemented:
