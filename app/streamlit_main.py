@@ -558,7 +558,7 @@ with col2:
 # --- Sales Metrics Section ---
 st.header("Sales Metrics")
 timeframe = st.selectbox("Select Timeframe", ["Weekly", "Monthly", "Yearly"])
-freq_map = {"Weekly": "W", "Monthly": "M", "Yearly": "Y"}
+freq_map = {"Weekly": "W", "Monthly": "ME", "Yearly": "YE"}
 freq = freq_map[timeframe]
 
 col3, col4 = st.columns(2)
