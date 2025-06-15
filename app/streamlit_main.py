@@ -470,6 +470,7 @@ with col1:
     else:
         st.markdown("**Note:** Select a customer to highlight their segment.")
 with col2:
+    # --- MODIFIED: Revenue by Region Over Time ---
     st.subheader("Revenue by Region Over Time")
 
     # Timeframe selector for this specific chart
@@ -479,7 +480,8 @@ with col2:
         index=1,  # Default to Monthly
         key="region_timeframe_selector",
     )
-    freq_region = {"Weekly": "W", "Monthly": "ME", "Yearly": "YE"}[timeframe_region]
+    # FIX: Use 'W-SUN' for weekly, 'ME' for month-end and 'YE' for year-end frequencies
+    freq_region = {"Weekly": "W-SUN", "Monthly": "ME", "Yearly": "YE"}[timeframe_region]
 
     # Get the selected customer's region
     selected_region = (
@@ -556,8 +558,9 @@ with col2:
 
 # --- Sales Metrics Section ---
 st.header("Sales Metrics")
-timeframe = st.selectbox("Select Timeframe", ["Weekly", "Monthly", "Yearly"])
-freq_map = {"Weekly": "W", "Monthly": "ME", "Yearly": "YE"}
+timeframe = st.selectbox("Select Timeframe", ["Weekly", "Monthly", "Yearly"], key="sales_metrics_timeframe")
+# FIX: Use 'W-SUN' for weekly, 'ME' for month-end and 'YE' for year-end frequencies
+freq_map = {"Weekly": "W-SUN", "Monthly": "ME", "Yearly": "YE"}
 freq = freq_map[timeframe]
 
 col3, col4 = st.columns(2)
