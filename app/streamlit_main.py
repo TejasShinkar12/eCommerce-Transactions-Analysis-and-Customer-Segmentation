@@ -460,37 +460,54 @@ with col1:
     else:
         st.markdown("**Note:** Select a customer to highlight their segment.")
 with col2:
-    st.subheader("Revenue by Region")
-    region_revenue = display_df.groupby("Region")["Total_Spend"].sum().reset_index()
+    st.subheader("Revenue by Region Over Time")
     # Get the selected customer's region
     selected_region = (
         display_df.loc[customer_id, "Region"]
         if customer_id in display_df.index
         else None
     )
-    # Create a color list: red for the selected region, blue for others
-    colors = [
-        "red" if region == selected_region else "#636EFA"
-        for region in region_revenue["Region"]
-    ]
-    region_fig = px.bar(
-        region_revenue,
-        x="Region",
-        y="Total_Spend",
+    
+    # Group transactions by region and date
+    region_time_revenue = (
+        transactions.merge(display_df[["Region"]], left_on="CustomerID", right_index=True)
+        .groupby(["Region", pd.Grouper(key="TransactionDate", freq='ME')])["TotalValue"]
+        .sum()
+        .reset_index()
+    )
+    
+    # Create line plot
+    region_fig = px.line(
+        region_time_revenue,
+        x="TransactionDate",
+        y="TotalValue",
+        color="Region",
         title="Revenue by Region",
-        labels={"Total_Spend": "Total Revenue ($)"},
-        hover_data={"Total_Spend": ":.2f"},
+        labels={"TotalValue": "Total Revenue ($)", "TransactionDate": "Date"},
     )
-    # Update the bar colors
+    
+    # Update line colors and styles
     region_fig.update_traces(
-        marker=dict(color=colors),
-        hovertemplate="Region: %{x}<br>Revenue: $%{y:.2f}<extra></extra>",
+        mode="lines+markers",
+        hovertemplate="Date: %{x}<br>Region: %{fullData.name}<br>Revenue: $%{y:.2f}<extra></extra>",
     )
+    
+    # Highlight selected region
+    if selected_region:
+        region_fig.update_traces(
+            line=dict(width=4),
+            selector=dict(name=selected_region)
+        )
+        region_fig.update_traces(
+            line=dict(width=2),
+            selector=dict(name=lambda x: x != selected_region)
+        )
+    
     st.plotly_chart(region_fig, use_container_width=True)
 
     if selected_region:
         st.markdown(
-            f"**Note:** The red bar represents the selected customer's region - **{selected_region}**."
+            f"**Note:** The thicker line represents the selected customer's region - **{selected_region}**."
         )
     else:
         st.markdown("**Note:** Select a customer to highlight their region.")
