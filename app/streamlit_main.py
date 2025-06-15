@@ -419,6 +419,16 @@ st.plotly_chart(fig_radar, use_container_width=True)
 
 # --- Customer Insights Section ---
 st.header("Customer Insights")
+
+# --- Helper function to darken a hex color ---
+def darken_color(hex_color, factor=0.6):
+    """Darkens a hex color string by a given factor."""
+    if hex_color.startswith('#'):
+        hex_color = hex_color.lstrip('#')
+    rgb = tuple(int(hex_color[i:i+2], 16) for i in (0, 2, 4))
+    darker_rgb = tuple(int(c * factor) for c in rgb)
+    return '#{:02x}{:02x}{:02x}'.format(darker_rgb[0], darker_rgb[1], darker_rgb[2])
+
 col1, col2 = st.columns(2)
 
 with col1:
@@ -460,57 +470,90 @@ with col1:
     else:
         st.markdown("**Note:** Select a customer to highlight their segment.")
 with col2:
+    # --- MODIFIED: Revenue by Region Over Time ---
     st.subheader("Revenue by Region Over Time")
+
+    # Timeframe selector for this specific chart
+    timeframe_region = st.selectbox(
+        "Select Timeframe",
+        options=["Weekly", "Monthly", "Yearly"],
+        index=1,  # Default to Monthly
+        key="region_timeframe_selector",
+    )
+    freq_region = {"Weekly": "W", "Monthly": "M", "Yearly": "Y"}[timeframe_region]
+
     # Get the selected customer's region
     selected_region = (
         display_df.loc[customer_id, "Region"]
         if customer_id in display_df.index
         else None
     )
-    
-    # Group transactions by region and date
-    region_time_revenue = (
-        transactions.merge(display_df[["Region"]], left_on="CustomerID", right_index=True)
-        .groupby(["Region", pd.Grouper(key="TransactionDate", freq='ME')])["TotalValue"]
+
+    # Merge transactions with customer region info for plotting
+    transactions_with_region = transactions.merge(
+        display_df[["Region"]], on="CustomerID", how="left"
+    )
+
+    # Group data by the selected timeframe and region
+    region_revenue_over_time = (
+        transactions_with_region.groupby(
+            [pd.Grouper(key="TransactionDate", freq=freq_region), "Region"]
+        )["TotalValue"]
         .sum()
         .reset_index()
     )
-    
-    # Create line plot
-    region_fig = px.line(
-        region_time_revenue,
-        x="TransactionDate",
-        y="TotalValue",
-        color="Region",
-        title="Revenue by Region",
-        labels={"TotalValue": "Total Revenue ($)", "TransactionDate": "Date"},
-    )
-    
-    # Update line colors and styles
-    region_fig.update_traces(
-        mode="lines+markers",
-        hovertemplate="Date: %{x}<br>Region: %{fullData.name}<br>Revenue: $%{y:.2f}<extra></extra>",
-    )
-    
-    # Highlight selected region
-    if selected_region:
-        region_fig.update_traces(
-            line=dict(width=4),
-            selector=dict(name=selected_region)
+
+    # Create the line chart using Plotly Graph Objects for more control
+    region_fig_time = go.Figure()
+
+    # Get a list of unique regions and assign a default color to each
+    regions = sorted(region_revenue_over_time["Region"].unique())
+    color_map = {region: color for region, color in zip(regions, px.colors.qualitative.Plotly)}
+
+
+    for region in regions:
+        region_data = region_revenue_over_time[
+            region_revenue_over_time["Region"] == region
+        ]
+        is_selected = region == selected_region
+        base_color = color_map.get(region, '#CCCCCC') # Fallback color
+        
+        # Use the base color, but make it darker if it's the selected one
+        plot_color = darken_color(base_color, factor=0.5) if is_selected else base_color
+
+        region_fig_time.add_trace(
+            go.Scatter(
+                x=region_data["TransactionDate"],
+                y=region_data["TotalValue"],
+                mode="lines+markers",
+                name=region,
+                line=dict(
+                    width=4 if is_selected else 2,
+                    color=plot_color,
+                ),
+                opacity=1.0 if is_selected else 0.7,
+                hovertemplate=f"<b>{region}</b><br>Date: %{{x}}<br>Revenue: $%{{y:.2f}}<extra></extra>",
+            )
         )
-        region_fig.update_traces(
-            line=dict(width=2),
-            selector=dict(name=lambda x: x != selected_region)
-        )
-    
-    st.plotly_chart(region_fig, use_container_width=True)
+
+    region_fig_time.update_layout(
+        title=f"Revenue by Region ({timeframe_region})",
+        xaxis_title="Date",
+        yaxis_title="Total Revenue ($)",
+        margin=dict(t=40, l=0, r=0, b=0),
+        legend_title="Region",
+        hovermode="x unified",
+    )
+
+    st.plotly_chart(region_fig_time, use_container_width=True)
 
     if selected_region:
         st.markdown(
-            f"**Note:** The thicker line represents the selected customer's region - **{selected_region}**."
+            f"**Note:** The darker, thicker line represents the selected customer's region: **{selected_region}**."
         )
     else:
         st.markdown("**Note:** Select a customer to highlight their region.")
+
 
 # --- Sales Metrics Section ---
 st.header("Sales Metrics")
