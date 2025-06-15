@@ -470,7 +470,6 @@ with col1:
     else:
         st.markdown("**Note:** Select a customer to highlight their segment.")
 with col2:
-    # --- MODIFIED: Revenue by Region Over Time ---
     st.subheader("Revenue by Region Over Time")
 
     # Timeframe selector for this specific chart
@@ -480,7 +479,7 @@ with col2:
         index=1,  # Default to Monthly
         key="region_timeframe_selector",
     )
-    freq_region = {"Weekly": "W", "Monthly": "M", "Yearly": "Y"}[timeframe_region]
+    freq_region = {"Weekly": "W", "Monthly": "ME", "Yearly": "YE"}[timeframe_region]
 
     # Get the selected customer's region
     selected_region = (
